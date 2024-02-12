@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add to Cart</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <header>
+    <h1>Men's T-shirt</h1>
+    <p>Cotton T-shirt for men :)</p>
+    <img src="images/cloth1.webp" alt="cloth1" class="itemImg">
+  </header>
+  <main>
+    <div class="product-info">
+      <p>Price per unit: $10.00</p>
+      <p>Quantity: <input type="number" id="quantity" value="1" min="1" onchange="updateTotalPrice()"></p>
+      <p>Total Price: <span id="totalPrice">$10.00</span></p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div id="cart-feedback"></div>
+  </main>
+  <script src="myScript.js"></script>
+</body>
+</html>
